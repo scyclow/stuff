@@ -1,0 +1,17 @@
+#chat-box{
+  border: 3px solid black;
+  border-radius: 10px;
+  height: 360px;
+  width: 500px;
+  overflow: scroll;
+  padding: 10px;
+}
+
+html {
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+}
+
+.login-buttons-dropdown-align-right {
+    float: right;
+}

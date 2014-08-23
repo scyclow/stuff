@@ -1,0 +1,41 @@
+<head>
+  <title>Chat app</title>
+</head>
+
+<body>
+  {{> loginButtons align="right"}}<br>
+  <h1>Bobochat</h1>
+  <!-- {{> welcome }} -->
+  <div id="chat-box">
+    {{> messages }}
+  </div>
+
+  {{> input }}
+
+</body>
+
+<template name="welcome">
+  <p>
+    Welcome to the example chat app! Please log in to show your username.
+  </p>
+</template>
+
+<template name="messages">
+  {{#each messages}}
+    <strong>{{name}} ({{hours}}:{{minutes}}:{{seconds}}):</strong> {{message}}<br>
+  {{/each}}
+</template>
+
+<template name="input">
+  <p>Say: <input type="text" id="message-box"></p>
+</template>
+
+<template name="userData">
+  <ul>
+  {{#each users}}
+    <li>{{username}}</li>
+  {{/each}}
+  </ul>
+</template>
+
+
